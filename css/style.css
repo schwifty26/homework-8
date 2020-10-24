@@ -1,0 +1,106 @@
+@import url(pricing-section.css);
+@import url(stylish-section.css);
+@import url(footer.css);
+@import url(reset.css);
+@import url(customers.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@import url(header.css);
+@import url(axit-section.css);
+@import url(contact-us-section.css);
+@import url(tabs-section.css);
+
+.awesome-section {
+width: 100%;
+}
+
+.awesome-body {
+   padding-bottom: 80px;
+}
+
+.text {
+color: gray;
+font-size: 14px;
+text-align: center;
+line-height: 1.5;
+
+}
+
+.title {
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 106px;
+}
+
+
+.awesome-elements  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+    
+}
+
+.awesome-elem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 350px;
+   
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 64px;
+    height: 2px;
+    background-color: #DD945E;
+    margin: 30px auto;
+}
+
+.elem-title {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.awesome-elem img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px #DD945E solid;
+    padding: 13px;
+    margin-bottom: 29px;
+}
+
+
+/* --------ADAPTIVE--AWESOME------ */
+
+@media screen and (max-width: 1110px) {
+
+    .awesome-elements {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    #awesome-elem-last {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 777px) {
+
+    .awesome-elem {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    #awesome-elem-last {
+        margin-top: 50px;
+    }
+    #awesome-elem-first {
+        margin-top: 0px;
+    }
+}

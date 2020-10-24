@@ -1,0 +1,137 @@
+
+.pricing-section {
+width: 100%;
+background-color: #F5F5F5;
+}
+
+.pricing-body {
+   padding-bottom: 96px ;
+}
+
+.pricing-elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.pricing-title {
+    padding-bottom: 80px;
+}
+
+.pricing-elem {
+    color: gray;
+    font-size: 14px;
+    width: 343px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.first-li {
+    padding: 10px;
+    background-color: #292F2F;
+    color: white;
+    font-size: 20px;
+    font-family:  sans-serif;
+    border-bottom: white solid 1px;
+}
+
+.second-li {
+    padding-top: 20px;  
+    background-color: #292F2F;
+    color: white;
+    font-size: 20px;
+    font-family:  sans-serif;
+    border-bottom: white solid 1px;
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.third-li {
+    padding: 15px;
+    background-color: #292F2F;
+    color: gray;
+    font-style: italic;
+    font-size: 14px;
+    font-family:  sans-serif;
+    border-bottom: #FF8B38 solid 4px;
+}
+
+#fourth-li {
+    background-color: #FF8B38;
+    color: white;
+    font-size: 14px;
+    font-family:  sans-serif;
+    padding: 12px;
+}
+
+.pricing-li {
+    display: block;
+    border-bottom: 0.1px solid rgba(0,0,0,.3);
+    padding: 15px;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.pricing-number {
+    font-family: 'Raleway', sans-serif;
+    font-size: 90px;
+    font-weight: 600;
+}
+
+.dollar {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    line-height: 2;
+}
+
+
+/* -------ADAPTIVE-PRICING------- */
+
+@media screen and (max-width: 1200px) {
+
+    .pricing-elements {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .pricing-elem {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .pricing-elements {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .pricing-elem {
+        width: 35%;
+        margin-top: 50px;
+    }
+
+    .pricing-title {
+        padding-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .pricing-elem {
+        width: 60%;
+        margin-top: 50px;
+    }
+}
+

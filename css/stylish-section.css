@@ -1,0 +1,71 @@
+.stylish-section {
+    background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6) ), url(../img/background1.png);
+    background-size: cover;
+    width: 100%;
+}
+
+#stylish-title {
+    color: white;
+}
+
+#stylish-title::after {
+    background-color: white;
+}
+
+.stylish-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stylish-text {
+    font-size: 16px;
+    color:#FFFFFF;
+    opacity: 0.5;
+}
+
+.download-ref {
+    padding: 12px 40px;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 17px;
+	text-decoration: none;
+    opacity: 0.8;
+}
+.download-button {
+    margin-top: 33px;
+    margin-bottom: 63px;
+}
+
+.download-ref:hover {
+	color: #FFFFFF;
+	border: 4px solid gray;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: #FF9B51;
+	transition-duration: 0.3s;
+}
+
+
+/* ------ADAPTIVE----STYLISH------- */
+
+@media screen and (max-width: 810px) {
+    .stylish-body {
+        text-align: center;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 460px) {
+   #stylish-title {
+       font-size: 30px;
+   }
+}
+
+@media screen and (max-width: 385px) {
+    #stylish-title {
+        font-size: 25px;
+    }
+ }

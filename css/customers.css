@@ -1,0 +1,101 @@
+
+
+.customers-elem-text {
+    max-width: 248px;
+    font-weight: 300;
+    font-size: 14px;
+    font-style: italic;
+    color: #86878B;
+    padding: 24px 12px;
+}
+
+.customers-elements {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px auto;
+}
+
+.customers-elem-image {
+    margin-top: 20px;
+    width: 70px;
+    height: 70px;
+    background-image: url(../img/icon/manphoto.png);
+}
+
+.customers-elem-name {
+    font-family: 'Open Sans', sans-serif;  
+}
+
+.customers-elem-profession {
+    color: #86878B;
+    margin-top: 10px;
+}
+
+
+.customers-elem-cloud {
+    max-width: 273px;
+	background-color:#F5F5F5;
+  border: 2px solid #F5F5F5;
+  position: relative;
+}
+
+.customers-elem-cloud::after {
+    content: ""; 
+      position: absolute; 
+      width: 0; 
+      height: 0; 
+      left: 17px; 
+    border: 15px solid transparent;
+    border-top-color: #F5F5F5;
+    border-bottom: 0;
+  } 
+
+  .customers-elem-id {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 20px;
+      margin-left: 20px;
+  }
+
+
+.customers-elem-profile {
+    display: flex;
+    flex-direction: row;
+}
+
+  /* ------ADAPTIVE---CUSTOMERS------- */
+
+  @media screen and (max-width: 970px) {
+      .customers-elements {
+          flex-wrap: wrap;
+          justify-content: space-around;
+          /* margin: 100px auto; */
+      }
+
+      #custom-elem-last {
+          margin-top: 130px;
+      }
+
+      /* @media screen and (max-width: 920px) {
+        .customers-elements {
+            margin: 100px auto;
+        }
+      } */
+
+  }
+
+  @media screen and (max-width: 615px) {
+    .customers-elements {
+        margin: 0px auto;
+    }
+   .customers-elem {
+       margin-top: 60px;
+   }
+   #custom-elem-last {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+  }
